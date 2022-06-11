@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>
+      Diner Restaurants Category Bootstrap Responsive Web Template | BC32E ::
+      Group 5
+    </title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -29,25 +32,437 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- OWL CAROUSEL  -->
     <link rel="stylesheet" href="./css/owl.carousel.min.css" />
     <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
     <!-- Main Css -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body>
-    <header></header>
-    <section class="AboutUS"></section>
-    <section class="Agent"></section>
-    <section class="Categories"></section>
-    <section class="Features"></section>
-    <section class="Contact"></section>
-    <section class="Number"></section>
+  <body id="myBody">
+
+    <header >
+      <div class="container">
+        <div class="header__content">
+          <nav class="navbar navbar-expand-lg header_left">
+            <a class="logo navbar-brand mr-auto">Diner</a>
+            <div class="form-inline">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form>
+                  <div class="search_wrap">
+                    <input class="header_search form-control" type="search" placeholder="Search here ..." aria-label="Search">
+                    <div>
+                      <button class="icon btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>                    
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <span class="theme" 
+              id="switchButton" >
+                <i class="gg-moon"></i>
+                <i class="gg-sun"></i>
+              </span> 
+              <button class="menu-bar" id="trigger-overlay" onclick="on()" type="button"><i class="fa-solid fa-bars"></i></button>
+            </div>          
+          </nav>
+        </div>
+        <div id="overlay" class="overlay-scale open" >
+          <button type="button" onclick="off()" id="overlayClose" class="overlay-close"><i class="fa-solid fa-xmark"></i></button>
+          <nav>
+            <ul>
+              <li><a href="#" class="active">Home</a></li>
+              <li><a href="#" >About</a></li>
+              <li><a href="#" >Services</a></li>
+              <li><a href="#" >Blog</a></li>
+              <li><a href="#" >Home</a></li>
+              <li><a href="#" >404</a></li>
+              <li><a href="#" >Landing Page</a></li>
+              <li><a href="#" >Shot Codes</a></li>
+              <li><a href="#" >Email</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header_info">
+          <h3 class="mb-4">The only thing we love more than food is you!</h3>
+          <div class="separatorhny"></div>
+          <p class="pr-lg-5 mt-md-4 mt-3">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.Ea
+            ipsum sed consequuntur illum facere.
+          </p>
+          <a class="btn btn-white mt-sm-5 mt-4 mr-2" href="#">
+            Read More <span class="fa fa-chevron-right ml-2" aria-hidden="true"></span></a>
+        </div>
+
+        
+      </div>
+      
+    </header>
+    
+    <section class="aboutUs py-5">
+      <div class="container py-md-5">
+        <div class="row ">
+          <div class="col-lg-5">
+            <div class="header-title">
+              <h6 >About Us</h6>
+              <h3 >
+                We found our creative space that is open for you.
+              </h3>
+            </div>
+          </div>
+          <div class="col-lg-7 mt-lg-0 mt-3 col-right">
+            <p class="">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
+              ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet
+              elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit amet. Lorem ipsum init
+              dolor sit, amet elit. Dolor ipsum non velit, culpa!Lorem ipsum init dolor sit.
+            </p>
+            <p class="mt-3">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
+              ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet
+              elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit amet.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="agent">
+      <div class="container-fluid px-lg-0">
+        <div class="row align-items-center">
+          <div class="col-lg-6 px-lg-0 pt-lg-0 pt-5">
+            <div class="agent_left"></div>
+          </div>
+          <div class="col-lg-6 px-lg-4 pt-lg-3 pt-4">
+            <div class="agent_right p-md-5 p-3">
+              <div class="header-title">
+                <h6>More than 3000 Restaurants</h6>
+                <h3>
+                  Book a table easly at the best price.
+                </h3>
+                <p class="my-3">
+                  Vestibulum ante ipsum primis in faucibus orci luctus
+                  turpis sodales quis. Integer sit amet mattis quam.Vivamus a ligula quam tesque et libero ut justo ultrices
+                  in.
+                </p>
+                <div class="row mt-5">
+                  <div class="col-6 agent_subscribe">
+                    <div class="icon">
+                      <i class="fa-solid fa-thumbs-up"></i>
+                    </div>
+                    <a href="#">Best Deal</a>
+                    <p>Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
+                  </div>
+                  <div class="col-6 agent_subscribe">
+                    <div class="icon">
+                      <i class="fa-solid fa-utensils"></i>
+                    </div>
+                    <a href="#">Best Food</a>
+                    <p>Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="categories py-5">
+      <div class="container py-md-5 py-2">
+        <div class="header-title text-center">
+          <h6 >What's New</h6>
+          <h3 class="mb-lg-5">
+            Popular Categories
+          </h3>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-6 mt-lg-0 mt-4">
+            <div class="categories__item">
+              <div class="categories__img">
+                <a href="#">
+                  <img src="./img/g1.jpg" alt="...">
+                </a>
+              </div>
+              <div class="categories__detail p-md-5 p-4">
+                <a href="#">
+                  <h4 class="mt-4 mb-0">Vegetarian</h4>
+                  <h6 class="mt-sm-2 mt-1">$350</h6>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-6 mt-lg-0 mt-4">
+            <div class="categories__item">
+              <div class="categories__img">
+                <a href="#">
+                  <img src="./img/g2.jpg" alt="...">
+                </a>
+              </div>
+              <div class="categories__detail p-md-5 p-4">
+                <a href="#">
+                  <h4 class="mt-4 mb-0">Drinks</h4>
+                  <h6 class="mt-sm-2 mt-1">$550</h6>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-6 mt-lg-0 mt-4">
+            <div class="categories__item">
+              <div class="categories__img">
+                <a href="#">
+                  <img src="./img/g3.jpg" alt="...">
+                </a>
+              </div>
+              <div class="categories__detail p-md-5 p-4">
+                <a href="#">
+                  <h4 class="mt-4 mb-0">Lunch</h4>
+                  <h6 class="mt-sm-2 mt-1">$650</h6>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-6 mt-4">
+            <div class="categories__item">
+              <div class="categories__img">
+                <a href="#">
+                  <img src="./img/g4.jpg" alt="...">
+                </a>
+              </div>
+              <div class="categories__detail p-md-5 p-4">
+                <a href="#">
+                  <h4 class="mt-4 mb-0">Bakery</h4>
+                  <h6 class="mt-sm-2 mt-1">$550</h6>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-6 mt-4">
+            <div class="categories__item">
+              <div class="categories__img">
+                <a href="#">
+                  <img src="./img/g5.jpg" alt="...">
+                </a>
+              </div>
+              <div class="categories__detail p-md-5 p-4">
+                <a href="#">
+                  <h4 class="mt-4 mb-0">Desserts</h4>
+                  <h6 class="mt-sm-2 mt-1">$750</h6>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-6 mt-4">
+            <div class="categories__item">
+              <div class="categories__img">
+                <a href="#">
+                  <img src="./img/g6.jpg" alt="...">
+                </a>
+              </div>
+              <div class="categories__detail p-md-5 p-4">
+                <a href="#">
+                  <h4 class="mt-4 mb-0">Pizza</h4>
+                  <h6 class="mt-sm-2 mt-1">$850</h6>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="features py-5">
+      <div class="container py-lg-5 py-md-3 py-3">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="features__content">
+              <div class="features__header">
+                <div class="icon">
+                  <i class="fa-solid fa-users"></i>
+                </div>
+                <div class="info">
+                  <p>01</p>
+                  <h4><a href="#url">Soup</a></h4>
+                </div>
+              </div>
+              <p class="mt-3">
+                Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
+                vitae sit.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-md-0 mt-4">
+            <div class="features__content">
+              <div class="features__header">
+                <div class="icon">
+                  <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <div class="info">
+                  <p>02</p>
+                  <h4><a href="#url">Drinks</a></h4>
+                </div>
+              </div>
+              <p class="mt-3">
+                Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
+                vitae sit.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-md-0 mt-4">
+            <div class="features__content">
+              <div class="features__header">
+                <div class="icon">
+                  <i class="fa fa-thermometer-full"></i>
+                </div>
+                <div class="info">
+                  <p>03</p>
+                  <h4><a href="#url">Pizza</a></h4>
+                </div>
+              </div>
+              <p class="mt-3">
+                Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
+                vitae sit.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+            <div class="features__content">
+              <div class="features__header">
+                <div class="icon">
+                  <i class="fa-solid fa-hands-asl-interpreting"></i>
+                </div>
+                <div class="info">
+                  <p>04</p>
+                  <h4><a href="#url">Breakfast</a></h4>
+                </div>
+              </div>
+              <p class="mt-3">
+                Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
+                vitae sit.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+            <div class="features__content">
+              <div class="features__header">
+                <div class="icon">
+                  <i class="fa-solid fa-paintbrush"></i>
+                </div>
+                <div class="info">
+                  <p>05</p>
+                  <h4><a href="#url">Lunch</a></h4>
+                </div>
+              </div>
+              <p class="mt-3">
+                Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
+                vitae sit.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+            <div class="features__content">
+              <div class="features__header d-grid">
+                <div class="icon">
+                  <i class="fa-solid fa-eraser"></i>
+                </div>
+                <div class="info">
+                  <p>06</p>
+                  <h4><a href="#url">Dinner</a></h4>
+                </div>
+              </div>
+              <p class="mt-3">
+                Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
+                vitae sit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact py-5">
+      <div class="container text-center pt-lg-2 pb-lg-4 py-4">
+        <div class="contact__content py-lg-5">
+          <h3 class="px-lg-5">Deliciousness jumping into the mouth.</h3>
+          <div class="contact__btn pb-lg-5">
+            <a
+              href="#"
+              class="btn btn-style btn-white mt-sm-5 mt-4 mr-lg-4 mr-2"
+              >Read More<span class="fa fa-chevron-right ml-2"></span
+            ></a>
+            <a href="#" class="btn btn-style btn-orange mt-sm-5 mt-4"
+              >Contact Us<span
+                class="fa fa-chevron-right ml-2"
+                aria-hidden="true"
+              ></span
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="number py-lg-0 py-md-5 py-4"">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-3 col-6 mt-md-0 mt-4">
+            <div class="number__item">
+              <i class="fa-solid fa-building"></i>
+              <h3 class="counter">15,100</h3>
+              <p class="count-text">Branches</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-6 mt-md-0 mt-4">
+            <div class="number__item">
+              <i class="fa-solid fa-utensils"></i>
+              <h3 class="counter">19,256</h3>
+              <p class="count-text ">Food Items</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-6 mt-md-0 mt-4">
+            <div class="number__item">
+              <i class="fa-solid fa-users"></i>
+              <h3 class="counter">12.100</h3>
+              <p class="count-text">Chefs</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-6 mt-md-0 mt-4">
+            <div class="number__item">
+              <i class="fa-solid fa-face-smile"></i>
+              <h3 class="counter">2.560</h3>
+              <p class="count-text">Happy Customers</p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <section class="video pt-5">      
+        <div class="container pt-5">
+          <div class="video__wrap">
+            <a href="#small-dialog" class="popup-with-zoom-anim play-view text-center pl-3">
+              <i class="fa-solid fa-play"></i>
+            </a>
+            <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+              <iframe title="vimeo-player" src="https://player.vimeo.com/video/106770833?h=941204ac6e" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>          
+        </div>      
+    </section>
+
     <section class="post py-5">
       <div class="container py-md-5 py-2">
         <div class="header-title text-center">
           <h6>latest posts</h6>
-          <h1>blog posts</h1>
+          <h3>blog posts</h3>
         </div>
         <div class="row">
             <div class="col-lg-4 col-md-6 mt-5">
@@ -152,12 +567,13 @@
         </div>
       </div>
     </section>
+
     <section class="testimonials">
       <div class="testimonials_main py-5">
         <div class="container py-lg-5 py-md-3">
           <div class="header-title text-center">
             <h6>Testimonials</h6>
-            <h1 class="mb-5">What People Say</h1>
+            <h3 class="mb-5">What People Say</h3>
           </div>
           <div
             id="owl-agency"
@@ -255,23 +671,32 @@
         </div>
       </div>
     </section>
+
     <footer>
       <div class="footer-content py-5">
         <div class="container py-lg-4">
           <div class="row">
             <div class="col-lg-4 col-md-6 col-sm-7">
               <h2 class="mb-3">
-                <a href="#">Dinner</a>
+                <a href="#">Diner</a>
               </h2>
               <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet Semper at elit.</p>
+<<<<<<< HEAD
               <div class="social">
                 <a href="#"><span><ion-icon name="logo-facebook"></ion-icon></span></a>
                 <a href="#"><span><ion-icon name="logo-twitter"></ion-icon></span></a>
                 <a href="#"><span><ion-icon name="logo-instagram"></ion-icon></span></a>
                 <a href="#"><span><ion-icon name="logo-linkedin"></ion-icon></span></a>
+=======
+              <div class="social mt-4">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+>>>>>>> main
               </div>
             </div>
-            <div class="col-lg-2 col-md-6 col-sm-5">
+            <div class="col-lg-2 col-md-6 col-sm-5 links">
               <ul>
                 <h6 class="mb">Usefull Links </h6>
                 <li><a href="#">About Us</a></li>
@@ -281,7 +706,7 @@
                 <li><a href="#">Contact us</a></li>
               </ul>
             </div>
-            <div class="col-lg-2 col-md-6 col-sm-5">
+            <div class="col-lg-2 col-md-6 col-sm-5 links">
               <ul>
                 <h6>More Info </h6>
                 <li><a href="#">History</a></li>
@@ -304,6 +729,7 @@
         </div>
       </div>
     </footer>
+
     <section class="copyright">
       <div class="container">
         <div class="row">
@@ -346,11 +772,73 @@ function topFunction() {
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"
     ></script>
+    <!-- WAYPOINTS CDN -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+      integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
       crossorigin="anonymous"
     ></script>
+
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- COUNTUP -->
+    <script src="./libs/Countup/jquery.countup.min.js"></script>
+    <script>
+      $(".counter").countUp({
+        time: 3000,
+        delay: 10,
+      });
+    </script>
+
+    <!-- Magnific Popup -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js" integrity="sha512-C1zvdb9R55RAkl6xCLTPt+Wmcz6s+ccOvcr6G57lbm8M2fbgn2SUjUJbQ13fEyjuLViwe97uJvwa1EUf4F1Akw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+      $(document).ready(function () {
+        $('.popup-with-zoom-anim').magnificPopup({
+          type: 'inline',
+  
+          fixedContentPos: false,
+          fixedBgPos: true,
+  
+          overflowY: 'auto',
+  
+          closeBtnInside: true,
+          preloader: false,
+  
+          midClick: true,
+          removalDelay: 300,
+          mainClass: 'my-mfp-zoom-in'
+        });
+  
+        $('.popup-with-move-anim').magnificPopup({
+          type: 'inline',
+  
+          fixedContentPos: false,
+          fixedBgPos: true,
+  
+          overflowY: 'auto',
+  
+          closeBtnInside: true,
+          preloader: false,
+  
+          midClick: true,
+          removalDelay: 300,
+          mainClass: 'my-mfp-slide-bottom'
+        });
+      });
+    </script>
+
+
     <!-- OWL JS  -->
     <script src="./libs/owl.carousel.min.js"></script>
     <script>
@@ -376,9 +864,42 @@ function topFunction() {
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous">
+
     </script>
+    <script>
+      function on(){
+        document.getElementById("overlay").style.display = "block";
+      }
+      function off(){
+        document.getElementById("overlay").style.display = "none"
+      }
+    </script>
+<<<<<<< HEAD
     <!-- IONICONS -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+=======
+
+    <script>
+      /**
+Solution: 
+Khi click vào nút moon 🌙 , thẻ body sẽ được thêm class dark.
+Dựa vào class dark, ta viết css dành riêng cho dark theme.
+
+Ngược lại, khi click vào nút sun ☀️, ta sẽ xóa class dark để css light theme hiện lại
+
+*/
+
+//gọi thẻ button có id là switchButton
+// gắn chức năng click cho switchButton
+document.getElementById("switchButton").onclick = function () {
+  //khi button được click thì tìm đến thẻ body có id là myBody
+  // dùng classlist để gọi thuộc tính class của thẻ body
+  //Sử dụng toggle() để thêm hoặc xóa 1 class của thẻ html. Nếu thẻ body không có class dark thì toggle sẽ thêm class dark vào body. Ngược lại, nếu thẻ body đang có class dark thì toogle sẽ xóa class dark đi.
+  document.getElementById("myBody").classList.toggle("dark");
+};
+    </script>
+    
+>>>>>>> main
   </body>
 </html>
